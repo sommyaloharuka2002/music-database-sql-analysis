@@ -1,13 +1,3 @@
-SELECT t.track_id, t.name, t.album_id, ar.artist_id, t.media_type_id, 
-t.genre_id, p.playlist_id
-FROM track t JOIN
-album a ON t.album_id = a.album_id
-JOIN genre g ON t.genre_id = g.genre_id
-JOIN media_type mt ON t.media_type_id = mt.media_type_id
-JOIN playlist_track pt ON t.track_id = pt.track_id
-JOIN artist ar ON a.artist_id = ar.artist_id
-JOIN playlist p ON p.playlist_id = pt.playlist_id
-
 
 --Question Set 1 - Easy
 
@@ -96,7 +86,7 @@ AS avg_song_length FROM track t
 ) ORDER BY song_length DESC
 
 
---Question Set 3 - Advance */
+--Question Set 3 - Advance 
 
 --Q1: Find how much amount spent by each customer on artists? 
 --Write a query to return customer name, artist name and total spent 
