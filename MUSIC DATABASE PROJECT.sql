@@ -181,19 +181,3 @@ ORDER BY total_spent DESC
 )
 SELECT * FROM most_spent WHERE D_RANK <= 1
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
